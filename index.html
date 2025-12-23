@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="래빗트래블 - 임산부를 위한 프리미엄 태교여행 상담 서비스. 안전하고 편안한 여행을 약속드립니다.">
-    <title>래빗트래블 | 프리미엄 태교여행 상담</title>
+    <meta name="description" content="래빗트래블 - 임산부를 위한 프리미엄 태교여행. 제주도, 일본, 동남아 최저가 예약. 15분 빠른 답변, 24시간 현지 지원">
+    <meta name="keywords" content="태교여행, 임산부여행, 제주도여행, 일본온천, 발리여행, 래빗트래블">
+    <title>래빗트래블 | 임산부 태교여행 전문 - 제주·일본·동남아 최저가</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
@@ -18,25 +19,77 @@
 </head>
 
 <body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <span class="banner-icon">🎁</span>
+            <span class="banner-text">첫 상담 고객 <strong>10% 할인</strong> + 태교용품 선물 증정!</span>
+            <a href="#inquiry" class="banner-link">지금 신청하기 →</a>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header" id="header">
-        <nav class="nav container">
+        <div class="header-main container">
             <a href="#" class="nav__logo">
                 <span class="logo-icon">🐰</span>
                 <span class="logo-text">래빗트래블</span>
             </a>
-            <ul class="nav__menu">
-                <li><a href="#about" class="nav__link">소개</a></li>
-                <li><a href="#services" class="nav__link">서비스</a></li>
-                <li><a href="#benefits" class="nav__link">장점</a></li>
-                <li><a href="#reviews" class="nav__link">후기</a></li>
-            </ul>
-            <a href="#inquiry" class="nav__cta btn btn--primary">무료 상담 신청</a>
+            
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="여행지, 호텔, 투어를 검색하세요" class="search-input">
+                <button class="search-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <a href="#inquiry" class="header-btn header-btn--primary">
+                    <span>💬</span> 빠른 상담
+                </a>
+                <a href="tel:02-1234-5678" class="header-btn header-btn--outline">
+                    <span>📞</span> 02-1234-5678
+                </a>
+            </div>
+
             <button class="nav__toggle" id="nav-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+        </div>
+
+        <!-- Destination Tabs -->
+        <nav class="destination-nav">
+            <div class="container">
+                <ul class="destination-tabs">
+                    <li class="destination-tab active" data-destination="jeju">
+                        <span class="tab-emoji">🏝️</span>
+                        <span class="tab-text">제주도</span>
+                    </li>
+                    <li class="destination-tab" data-destination="japan">
+                        <span class="tab-emoji">🌸</span>
+                        <span class="tab-text">일본</span>
+                    </li>
+                    <li class="destination-tab" data-destination="southeast">
+                        <span class="tab-emoji">🏖️</span>
+                        <span class="tab-text">동남아</span>
+                    </li>
+                    <li class="destination-tab" data-destination="europe">
+                        <span class="tab-emoji">🏰</span>
+                        <span class="tab-text">유럽</span>
+                    </li>
+                    <li class="destination-tab" data-destination="domestic">
+                        <span class="tab-emoji">🌿</span>
+                        <span class="tab-text">국내</span>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -44,245 +97,369 @@
     <section class="hero" id="hero">
         <div class="hero__bg">
             <div class="hero__gradient"></div>
-            <div class="hero__particles" id="particles"></div>
+            <div class="hero__pattern"></div>
         </div>
         <div class="hero__content container">
             <div class="hero__badge">
                 <span class="badge__icon">✨</span>
-                <span class="badge__text">2024년 태교여행 전문</span>
+                <span class="badge__text">2024년 태교여행 예약 1위</span>
             </div>
             <h1 class="hero__title">
-                <span class="title__line">임산부를 위한</span>
-                <span class="title__line title__gradient">프리미엄 태교여행</span>
+                <span class="title__line">아이와 함께하는</span>
+                <span class="title__line title__gradient">첫 번째 여행</span>
             </h1>
             <p class="hero__description">
-                아이와 함께하는 첫 번째 여행, <br>
-                래빗트래블이 안전하고 편안하게 준비해드립니다.
+                임산부 전문 여행사 래빗트래블이<br>
+                안전하고 편안한 태교여행을 약속드립니다.
             </p>
-            <div class="hero__buttons">
-                <a href="#inquiry" class="btn btn--large btn--primary">
-                    <span>무료 상담 받기</span>
-                    <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            
+            <!-- Quick Booking Form -->
+            <div class="quick-booking">
+                <div class="booking-field">
+                    <label>여행지</label>
+                    <select>
+                        <option>제주도</option>
+                        <option>일본 규슈</option>
+                        <option>발리</option>
+                        <option>푸켓</option>
+                        <option>다낭</option>
+                    </select>
+                </div>
+                <div class="booking-field">
+                    <label>임신 주수</label>
+                    <select>
+                        <option>16-20주</option>
+                        <option>21-24주</option>
+                        <option>25-28주</option>
+                        <option>29-32주</option>
+                    </select>
+                </div>
+                <div class="booking-field">
+                    <label>여행 기간</label>
+                    <select>
+                        <option>2박 3일</option>
+                        <option>3박 4일</option>
+                        <option>4박 5일</option>
+                        <option>5박 6일 이상</option>
+                    </select>
+                </div>
+                <a href="#inquiry" class="booking-submit">
+                    <span>맞춤 견적 받기</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </a>
-                <a href="#services" class="btn btn--large btn--outline">
-                    <span>서비스 알아보기</span>
-                </a>
             </div>
-            <div class="hero__stats">
-                <div class="stat">
-                    <span class="stat__number">5,000+</span>
-                    <span class="stat__label">상담 완료</span>
-                </div>
-                <div class="stat__divider"></div>
-                <div class="stat">
-                    <span class="stat__number">98%</span>
-                    <span class="stat__label">만족도</span>
-                </div>
-                <div class="stat__divider"></div>
-                <div class="stat">
-                    <span class="stat__number">15분</span>
-                    <span class="stat__label">빠른 답변</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero__scroll">
-            <span>스크롤</span>
-            <div class="scroll__line"></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
+    <!-- Trust Badges -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-content">
+                        <strong>15분 초고속 답변</strong>
+                        <span>전화보다 빠른 채팅 상담</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💰</div>
+                    <div class="trust-content">
+                        <strong>최저가 보장</strong>
+                        <span>동일 상품 더 저렴하면 환불</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🎁</div>
+                    <div class="trust-content">
+                        <strong>포인트 적립</strong>
+                        <span>결제금액 3% 적립</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🆘</div>
+                    <div class="trust-content">
+                        <strong>24시간 현지 지원</strong>
+                        <span>여행중 돌발상황 즉시 대응</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations section" id="destinations">
         <div class="container">
             <div class="section__header">
-                <span class="section__badge">About Us</span>
-                <h2 class="section__title">래빗트래블을 소개합니다</h2>
-                <p class="section__description">
-                    토끼는 다산과 행복의 상징입니다.<br>
-                    래빗트래블은 새 생명을 기다리는 모든 가족에게 행복한 여행을 선물합니다.
-                </p>
+                <span class="section__badge">🔥 HOT</span>
+                <h2 class="section__title">인기 태교여행 상품</h2>
+                <p class="section__description">지금 가장 많이 예약하는 임산부 맞춤 여행</p>
             </div>
-            <div class="about__grid">
-                <div class="about__card">
-                    <div class="about__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        </svg>
+
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="product-emoji">🏝️</span>
+                        <div class="product-badges">
+                            <span class="badge badge--hot">BEST</span>
+                            <span class="badge badge--sale">15% OFF</span>
+                        </div>
                     </div>
-                    <h3 class="about__card-title">안전 최우선</h3>
-                    <p class="about__card-text">임산부 전문 여행 코스로 안전하고 편안한 일정을 설계합니다.</p>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                        </svg>
+                    <div class="product-content">
+                        <div class="product-location">제주도</div>
+                        <h3 class="product-title">제주 프리미엄 힐링 패키지</h3>
+                        <p class="product-desc">임산부 전용 프라이빗 투어 + 5성급 호텔</p>
+                        <ul class="product-features">
+                            <li>✓ 프라이빗 차량</li>
+                            <li>✓ 산모 전용 식단</li>
+                            <li>✓ 태교 마사지</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-original">890,000원</span>
+                                <span class="price-sale">756,500원~</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">⭐ 4.9</span>
+                                <span class="reviews">(328)</span>
+                            </div>
+                        </div>
+                        <a href="#inquiry" class="product-btn">상담 신청</a>
                     </div>
-                    <h3 class="about__card-title">맞춤 케어</h3>
-                    <p class="about__card-text">임신 주수와 컨디션에 맞는 1:1 맞춤 여행 상담을 제공합니다.</p>
                 </div>
-                <div class="about__card">
-                    <div class="about__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 6v6l4 2" />
-                        </svg>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="product-emoji">🌸</span>
+                        <div class="product-badges">
+                            <span class="badge badge--hot">인기</span>
+                        </div>
                     </div>
-                    <h3 class="about__card-title">빠른 응답</h3>
-                    <p class="about__card-text">15분 이내 빠른 상담 답변으로 소중한 시간을 아껴드립니다.</p>
+                    <div class="product-content">
+                        <div class="product-location">일본 규슈</div>
+                        <h3 class="product-title">규슈 온천 힐링 여행</h3>
+                        <p class="product-desc">임산부 가능 온천 + 가이세키 요리</p>
+                        <ul class="product-features">
+                            <li>✓ 임산부 온천 OK</li>
+                            <li>✓ 한국어 가이드</li>
+                            <li>✓ 료칸 숙박</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-original">1,290,000원</span>
+                                <span class="price-sale">1,090,000원~</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">⭐ 4.8</span>
+                                <span class="reviews">(215)</span>
+                            </div>
+                        </div>
+                        <a href="#inquiry" class="product-btn">상담 신청</a>
+                    </div>
                 </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="product-emoji">🏖️</span>
+                        <div class="product-badges">
+                            <span class="badge badge--premium">PREMIUM</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-location">발리</div>
+                        <h3 class="product-title">발리 럭셔리 풀빌라</h3>
+                        <p class="product-desc">프라이빗 풀빌라 + 산전 스파 패키지</p>
+                        <ul class="product-features">
+                            <li>✓ 프라이빗 풀빌라</li>
+                            <li>✓ 산전 마사지</li>
+                            <li>✓ 조식 포함</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-original">1,890,000원</span>
+                                <span class="price-sale">1,590,000원~</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">⭐ 4.9</span>
+                                <span class="reviews">(187)</span>
+                            </div>
+                        </div>
+                        <a href="#inquiry" class="product-btn">상담 신청</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <span class="product-emoji">🌊</span>
+                        <div class="product-badges">
+                            <span class="badge badge--new">NEW</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-location">다낭</div>
+                        <h3 class="product-title">다낭 리조트 패키지</h3>
+                        <p class="product-desc">해변 리조트 + 호이안 투어</p>
+                        <ul class="product-features">
+                            <li>✓ 오션뷰 객실</li>
+                            <li>✓ 호이안 투어</li>
+                            <li>✓ 공항 픽업</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-original">990,000원</span>
+                                <span class="price-sale">890,000원~</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">⭐ 4.7</span>
+                                <span class="reviews">(142)</span>
+                            </div>
+                        </div>
+                        <a href="#inquiry" class="product-btn">상담 신청</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="#" class="btn btn--outline btn--large">전체 상품 보기 →</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services section section--dark" id="services">
+    <!-- Why Choose Us -->
+    <section class="why-us section section--gradient" id="about">
         <div class="container">
             <div class="section__header section__header--light">
-                <span class="section__badge section__badge--light">Services</span>
-                <h2 class="section__title">프리미엄 태교여행 패키지</h2>
-                <p class="section__description">당신과 아기를 위한 특별한 여행을 준비했습니다.</p>
-            </div>
-            <div class="services__grid">
-                <div class="service__card">
-                    <div class="service__image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <span class="service__emoji">🏝️</span>
-                    </div>
-                    <div class="service__content">
-                        <span class="service__tag">인기</span>
-                        <h3 class="service__title">제주도 힐링 패키지</h3>
-                        <p class="service__text">자연 속에서 편안한 휴식과 태교를 즐길 수 있는 제주도 맞춤 여행</p>
-                        <ul class="service__features">
-                            <li>임산부 전용 숙소</li>
-                            <li>안전한 관광 코스</li>
-                            <li>프라이빗 차량 제공</li>
-                        </ul>
-                        <a href="#inquiry" class="btn btn--small btn--primary">상담 신청</a>
-                    </div>
-                </div>
-                <div class="service__card">
-                    <div class="service__image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <span class="service__emoji">🌸</span>
-                    </div>
-                    <div class="service__content">
-                        <span class="service__tag">추천</span>
-                        <h3 class="service__title">일본 온천 패키지</h3>
-                        <p class="service__text">규슈 온천에서 몸과 마음의 휴식을 취하는 힐링 여행</p>
-                        <ul class="service__features">
-                            <li>임산부 가능 온천</li>
-                            <li>가이세키 요리</li>
-                            <li>한국어 가이드</li>
-                        </ul>
-                        <a href="#inquiry" class="btn btn--small btn--primary">상담 신청</a>
-                    </div>
-                </div>
-                <div class="service__card">
-                    <div class="service__image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <span class="service__emoji">🏖️</span>
-                    </div>
-                    <div class="service__content">
-                        <span class="service__tag">프리미엄</span>
-                        <h3 class="service__title">동남아 리조트 패키지</h3>
-                        <p class="service__text">발리, 푸켓 등 프리미엄 리조트에서의 럭셔리 태교 여행</p>
-                        <ul class="service__features">
-                            <li>5성급 리조트</li>
-                            <li>스파 & 마사지</li>
-                            <li>프라이빗 풀빌라</li>
-                        </ul>
-                        <a href="#inquiry" class="btn btn--small btn--primary">상담 신청</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits section" id="benefits">
-        <div class="container">
-            <div class="section__header">
-                <span class="section__badge">Why Us</span>
+                <span class="section__badge section__badge--light">Why Rabbit Travel?</span>
                 <h2 class="section__title">래빗트래블이 특별한 이유</h2>
-                <p class="section__description">임산부 여행 전문가가 처음부터 끝까지 함께합니다.</p>
+                <p class="section__description">2015년부터 임산부 전문 여행사로 5,000건 이상의 성공적인 태교여행을 진행했습니다.</p>
             </div>
-            <div class="benefits__grid">
-                <div class="benefit__item">
-                    <div class="benefit__number">01</div>
-                    <div class="benefit__content">
-                        <h3 class="benefit__title">15분 초고속 답변</h3>
-                        <p class="benefit__text">전화보다 빠른 채팅 상담으로 궁금한 점을 빠르게 해결해드립니다.</p>
-                    </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-number">01</div>
+                    <div class="why-icon">👩‍⚕️</div>
+                    <h3>임산부 전문 코디네이터</h3>
+                    <p>산부인과 협력 하에 임신 주수별 안전한 여행 코스를 설계합니다. 모든 코디네이터가 임산부 케어 교육을 이수했습니다.</p>
                 </div>
-                <div class="benefit__item">
-                    <div class="benefit__number">02</div>
-                    <div class="benefit__content">
-                        <h3 class="benefit__title">최저가 보장</h3>
-                        <p class="benefit__text">동일 상품, 동일 조건 최저가 보장. 더 저렴한 곳이 있다면 맞춰드립니다.</p>
-                    </div>
+                <div class="why-card">
+                    <div class="why-number">02</div>
+                    <div class="why-icon">🏥</div>
+                    <h3>현지 의료 네트워크</h3>
+                    <p>모든 여행지에 한국어 가능 병원 네트워크를 보유하고 있어, 응급 상황 시 즉각 대응이 가능합니다.</p>
                 </div>
-                <div class="benefit__item">
-                    <div class="benefit__number">03</div>
-                    <div class="benefit__content">
-                        <h3 class="benefit__title">24시간 현지 지원</h3>
-                        <p class="benefit__text">여행 중 돌발 상황 발생 시 24시간 현지 지원 서비스를 제공합니다.</p>
-                    </div>
+                <div class="why-card">
+                    <div class="why-number">03</div>
+                    <div class="why-icon">🍱</div>
+                    <h3>산모 맞춤 식단</h3>
+                    <p>임산부에게 해로운 음식을 피하고, 영양가 높은 식사를 제공하는 레스토랑만 엄선하여 안내합니다.</p>
                 </div>
-                <div class="benefit__item">
-                    <div class="benefit__number">04</div>
-                    <div class="benefit__content">
-                        <h3 class="benefit__title">임산부 전문 코디</h3>
-                        <p class="benefit__text">임신 주수별 맞춤 여행 코스와 안전한 일정을 설계해드립니다.</p>
-                    </div>
+                <div class="why-card">
+                    <div class="why-number">04</div>
+                    <div class="why-icon">🚗</div>
+                    <h3>프라이빗 차량 서비스</h3>
+                    <p>대중교통 대신 편안한 전용 차량으로 이동합니다. 원할 때 언제든 휴식을 취할 수 있습니다.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="reviews section section--gradient" id="reviews">
+    <!-- Reviews Section -->
+    <section class="reviews section" id="reviews">
         <div class="container">
-            <div class="section__header section__header--light">
-                <span class="section__badge section__badge--light">Reviews</span>
+            <div class="section__header">
+                <span class="section__badge">💬 REVIEWS</span>
                 <h2 class="section__title">실제 고객 후기</h2>
-                <p class="section__description">래빗트래블과 함께한 행복한 여행 이야기</p>
+                <p class="section__description">100,000건 이상의 생생한 리뷰</p>
             </div>
+
+            <div class="review-stats">
+                <div class="review-stat-main">
+                    <span class="review-score">4.9</span>
+                    <div class="review-stars-big">⭐⭐⭐⭐⭐</div>
+                    <span class="review-count">총 5,234개 리뷰</span>
+                </div>
+                <div class="review-bars">
+                    <div class="review-bar">
+                        <span>5점</span>
+                        <div class="bar"><div class="bar-fill" style="width: 89%"></div></div>
+                        <span>89%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>4점</span>
+                        <div class="bar"><div class="bar-fill" style="width: 8%"></div></div>
+                        <span>8%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>3점</span>
+                        <div class="bar"><div class="bar-fill" style="width: 2%"></div></div>
+                        <span>2%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>2점</span>
+                        <div class="bar"><div class="bar-fill" style="width: 1%"></div></div>
+                        <span>1%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>1점</span>
+                        <div class="bar"><div class="bar-fill" style="width: 0%"></div></div>
+                        <span>0%</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="reviews__slider">
                 <div class="review__card">
-                    <div class="review__stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review__text">"임신 7개월에 제주도 여행을 갔는데, 정말 안전하고 편안하게 다녀왔어요. 숙소도 너무 좋았고, 일정도 무리 없이 딱 좋았습니다!"
-                    </p>
-                    <div class="review__author">
-                        <div class="author__avatar">K</div>
-                        <div class="author__info">
-                            <span class="author__name">김서연님</span>
-                            <span class="author__detail">임신 28주 / 제주도</span>
+                    <div class="review__header">
+                        <div class="review__author">
+                            <div class="author__avatar">K</div>
+                            <div class="author__info">
+                                <span class="author__name">김서연</span>
+                                <span class="author__detail">임신 28주 · 제주도 힐링 패키지</span>
+                            </div>
                         </div>
+                        <div class="review__stars">⭐⭐⭐⭐⭐</div>
                     </div>
+                    <p class="review__text">"임신 7개월에 제주도 여행을 갔는데, 정말 안전하고 편안하게 다녀왔어요. 담당 코디님이 일정을 무리하지 않게 잘 짜주셨고, 숙소도 산모 배려가 잘 되어 있었습니다. 특히 프라이빗 차량이 있어서 피곤할 때 바로 쉴 수 있어서 좋았어요!"</p>
+                    <div class="review__date">2024.12.15</div>
                 </div>
                 <div class="review__card">
-                    <div class="review__stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review__text">"상담부터 여행까지 모든 게 완벽했어요. 임산부라 걱정이 많았는데 세심하게 케어해주셔서 감사했습니다. 다음에도 꼭 이용할게요!"</p>
-                    <div class="review__author">
-                        <div class="author__avatar">P</div>
-                        <div class="author__info">
-                            <span class="author__name">박지현님</span>
-                            <span class="author__detail">임신 24주 / 일본 규슈</span>
+                    <div class="review__header">
+                        <div class="review__author">
+                            <div class="author__avatar">P</div>
+                            <div class="author__info">
+                                <span class="author__name">박지현</span>
+                                <span class="author__detail">임신 24주 · 일본 규슈 온천</span>
+                            </div>
                         </div>
+                        <div class="review__stars">⭐⭐⭐⭐⭐</div>
                     </div>
+                    <p class="review__text">"상담부터 여행까지 모든 게 완벽했어요. 임산부가 들어갈 수 있는 온천을 미리 확인해주셔서 안심하고 즐겼습니다. 가이세키 요리도 너무 맛있었고, 료칸 직원분들도 친절했어요. 다음에도 꼭 이용할게요!"</p>
+                    <div class="review__date">2024.12.10</div>
                 </div>
                 <div class="review__card">
-                    <div class="review__stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review__text">"남편이랑 마지막 둘만의 여행으로 발리 다녀왔어요. 스파도 받고 맛있는 것도 먹고... 정말 행복한 추억이 됐어요. 강추합니다!"</p>
-                    <div class="review__author">
-                        <div class="author__avatar">L</div>
-                        <div class="author__info">
-                            <span class="author__name">이수민님</span>
-                            <span class="author__detail">임신 22주 / 발리</span>
+                    <div class="review__header">
+                        <div class="review__author">
+                            <div class="author__avatar">L</div>
+                            <div class="author__info">
+                                <span class="author__name">이수민</span>
+                                <span class="author__detail">임신 22주 · 발리 풀빌라</span>
+                            </div>
                         </div>
+                        <div class="review__stars">⭐⭐⭐⭐⭐</div>
                     </div>
+                    <p class="review__text">"남편이랑 마지막 둘만의 여행으로 발리 다녀왔어요. 풀빌라 너무 예쁘고, 산전 마사지도 정말 시원했어요. 맛있는 것도 먹고 힐링하고 왔습니다. 아기한테 좋은 에너지 많이 받은 것 같아요. 강추합니다!"</p>
+                    <div class="review__date">2024.12.05</div>
                 </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="#" class="btn btn--outline">리뷰 더보기 →</a>
             </div>
         </div>
     </section>
@@ -292,50 +469,90 @@
         <div class="container">
             <div class="inquiry__wrapper">
                 <div class="inquiry__info">
-                    <span class="section__badge">Contact</span>
+                    <span class="section__badge">📩 CONTACT</span>
                     <h2 class="inquiry__title">무료 상담 신청</h2>
                     <p class="inquiry__description">
                         아래 양식을 작성해주시면<br>
                         <strong>15분 이내</strong>에 전문 상담사가 연락드립니다.
                     </p>
+                    <div class="inquiry__benefits">
+                        <div class="inquiry-benefit">
+                            <span class="benefit-icon">✅</span>
+                            <span>첫 상담 10% 할인</span>
+                        </div>
+                        <div class="inquiry-benefit">
+                            <span class="benefit-icon">✅</span>
+                            <span>태교용품 선물 증정</span>
+                        </div>
+                        <div class="inquiry-benefit">
+                            <span class="benefit-icon">✅</span>
+                            <span>무이자 할부 지원</span>
+                        </div>
+                    </div>
                     <div class="inquiry__contact">
                         <div class="contact__item">
                             <span class="contact__icon">📞</span>
-                            <span class="contact__text">02-1234-5678</span>
+                            <div class="contact__info">
+                                <span class="contact__label">전화 상담</span>
+                                <span class="contact__text">02-1234-5678</span>
+                            </div>
                         </div>
                         <div class="contact__item">
                             <span class="contact__icon">💬</span>
-                            <span class="contact__text">카카오톡: @래빗트래블</span>
+                            <div class="contact__info">
+                                <span class="contact__label">카카오톡</span>
+                                <span class="contact__text">@래빗트래블</span>
+                            </div>
                         </div>
                         <div class="contact__item">
                             <span class="contact__icon">⏰</span>
-                            <span class="contact__text">평일 09:00 - 18:00</span>
+                            <div class="contact__info">
+                                <span class="contact__label">운영시간</span>
+                                <span class="contact__text">평일 09:00 - 18:00</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <form class="inquiry__form" id="inquiryForm" onsubmit="return handleFormSubmit(event)">
-                    <div class="form__group">
-                        <label for="name" class="form__label">이름</label>
-                        <input type="text" id="name" name="name" class="form__input" placeholder="이름을 입력해주세요" required>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="name" class="form__label">이름 *</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="홍길동" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label">연락처 *</label>
+                            <input type="tel" id="phone" name="phone" class="form__input" placeholder="010-0000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="fetalAge" class="form__label">임신 주수 *</label>
+                            <select id="fetalAge" name="fetal_age" class="form__input form__select" required>
+                                <option value="">선택</option>
+                                <option value="12주 이하">12주 이하</option>
+                                <option value="13-16주">13-16주</option>
+                                <option value="17-20주">17-20주</option>
+                                <option value="21-24주">21-24주</option>
+                                <option value="25-28주">25-28주</option>
+                                <option value="29-32주">29-32주</option>
+                                <option value="33주 이상">33주 이상</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="destination" class="form__label">희망 여행지</label>
+                            <select id="destination" name="destination" class="form__input form__select">
+                                <option value="">선택</option>
+                                <option value="제주도">제주도</option>
+                                <option value="일본">일본</option>
+                                <option value="동남아">동남아</option>
+                                <option value="유럽">유럽</option>
+                                <option value="기타">기타/미정</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form__group">
-                        <label for="phone" class="form__label">연락처</label>
-                        <input type="tel" id="phone" name="phone" class="form__input" placeholder="010-0000-0000"
-                            required>
-                    </div>
-                    <div class="form__group">
-                        <label for="fetalAge" class="form__label">임신 주수 (태아 나이)</label>
-                        <select id="fetalAge" name="fetal_age" class="form__input form__select" required>
-                            <option value="">선택해주세요</option>
-                            <option value="12주 이하">12주 이하 (초기)</option>
-                            <option value="13-16주">13-16주</option>
-                            <option value="17-20주">17-20주</option>
-                            <option value="21-24주">21-24주</option>
-                            <option value="25-28주">25-28주</option>
-                            <option value="29-32주">29-32주</option>
-                            <option value="33주 이상">33주 이상</option>
-                            <option value="미정/계획중">미정/계획중</option>
-                        </select>
+                        <label for="message" class="form__label">요청사항</label>
+                        <textarea id="message" name="message" class="form__input form__textarea" placeholder="원하시는 여행 스타일이나 특별한 요청사항이 있으시면 적어주세요."></textarea>
                     </div>
                     <button type="submit" class="btn btn--large btn--primary btn--full" id="submitBtn">
                         <span class="btn__text">무료 상담 신청하기</span>
@@ -346,7 +563,7 @@
                         </span>
                     </button>
                     <p class="form__notice">
-                        ※ 입력하신 정보는 상담 목적으로만 사용됩니다.
+                        ※ 입력하신 정보는 상담 목적으로만 사용되며, 개인정보처리방침에 따라 안전하게 관리됩니다.
                     </p>
                 </form>
             </div>
@@ -372,26 +589,63 @@
                         <span class="logo-icon">🐰</span>
                         <span class="logo-text">래빗트래블</span>
                     </a>
-                    <p class="footer__tagline">임산부를 위한 프리미엄 태교여행</p>
+                    <p class="footer__tagline">임산부를 위한 프리미엄 태교여행 전문</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📺</a>
+                        <a href="#" class="social-link">💬</a>
+                    </div>
                 </div>
-                <div class="footer__links">
-                    <a href="#about">소개</a>
-                    <a href="#services">서비스</a>
-                    <a href="#benefits">장점</a>
-                    <a href="#reviews">후기</a>
-                    <a href="#inquiry">상담신청</a>
+                
+                <div class="footer__menus">
+                    <div class="footer__menu">
+                        <h4>여행지</h4>
+                        <a href="#">제주도</a>
+                        <a href="#">일본</a>
+                        <a href="#">동남아</a>
+                        <a href="#">유럽</a>
+                    </div>
+                    <div class="footer__menu">
+                        <h4>서비스</h4>
+                        <a href="#">태교여행</a>
+                        <a href="#">허니문</a>
+                        <a href="#">가족여행</a>
+                        <a href="#">맞춤설계</a>
+                    </div>
+                    <div class="footer__menu">
+                        <h4>고객센터</h4>
+                        <a href="#">자주묻는질문</a>
+                        <a href="#">예약확인</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                    </div>
                 </div>
             </div>
+            
             <div class="footer__bottom">
                 <div class="footer__info">
-                    <p>래빗트래블 (주) | 대표: 홍길동 | 사업자등록번호: 123-45-67890</p>
+                    <p><strong>래빗트래블 (주)</strong> | 대표: 홍길동 | 사업자등록번호: 123-45-67890</p>
                     <p>서울특별시 강남구 테헤란로 123, 래빗빌딩 5층</p>
                     <p>고객센터: 02-1234-5678 | 이메일: hello@rabbittravel.co.kr</p>
+                    <p>관광사업등록번호: 제 2015-000034호 | 통신판매업 신고번호: 제 2016-서울강남-0922호</p>
                 </div>
                 <p class="footer__copyright">© 2024 Rabbit Travel. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="#inquiry" class="floating-btn floating-btn--kakao">
+            <span>💬</span>
+            <span class="floating-text">카카오 상담</span>
+        </a>
+        <a href="tel:02-1234-5678" class="floating-btn floating-btn--call">
+            <span>📞</span>
+            <span class="floating-text">전화 상담</span>
+        </a>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
