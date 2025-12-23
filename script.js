@@ -394,7 +394,9 @@ async function handleFormSubmit(e) {
                 .insert([{
                     name: name,
                     phone: phone,
-                    fetal_age: fetalAge
+                    fetal_age: fetalAge,
+                    destination: destination,
+                    message: message
                 }]);
 
             if (error) {
